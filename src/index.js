@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import NewApp from "./NewApp";
 import { createStore } from "redux";
 import reducers from "./reducer/index";
 import { Provider } from "react-redux";
@@ -45,7 +46,8 @@ const store = createStore(
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <App />,
+      <NewApp />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
