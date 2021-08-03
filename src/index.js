@@ -6,36 +6,37 @@ import { createStore } from "redux";
 
 // store: is the global state
 // action: defines what to do
-const petIncrement = () => {
-  return {
-    type: "PET_INCREASED",
-  };
-};
+// const petIncrement = () => {
+//   return {
+//     type: "PET_INCREASED",
+//   };
+// };
 
-const petDecrement = () => {
-  return {
-    type: "PET_DECREASE",
-  };
-};
+// const petDecrement = () => {
+//   return {
+//     type: "PET_DECREASE",
+//   };
+// };
 // reducer:  describes how an action changes from one state to another, it checks which action is called and modifies the store based on it
-const petCounter = (state = 0, action) => {
-  switch (action.type) {
-    case "PET_INCREASED":
-      return state + 1;
-    case "PET_DECREASED":
-      return state - 1;
-    default:
-      return state;
-  }
-};
+// const petCounter = (state = 0, action) => {
+//   switch (action.type) {
+//     case "PET_INCREASED":
+//       return state + 1;
+//     case "PET_DECREASED":
+//       return state - 1;
+//     default:
+//       return state;
+//   }
+// };
 
-let store = createStore(petCounter);
+// let store = createStore(petCounter);
 
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
+
 // dispatch: performs action to the reducer
-store.dispatch(petIncrement());
-store.dispatch(petIncrement());
-store.dispatch(petDecrement());
+// store.dispatch(petIncrement());
+// store.dispatch(petIncrement());
+// store.dispatch(petDecrement());
 
 ReactDOM.render(
   <React.StrictMode>
