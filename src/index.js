@@ -31,6 +31,7 @@ const petCounter = (state = 0, action) => {
 
 let store = createStore(petCounter);
 // dispatch: performs action to the reducer
+store.dispatch(petIncrement());
 
 ReactDOM.render(
   <React.StrictMode>
