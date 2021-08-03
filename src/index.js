@@ -17,7 +17,7 @@ const petDecrement = () => {
     type: "PET_DECREASE",
   };
 };
-// reducer:  describes how an action changes from one state to another
+// reducer:  describes how an action changes from one state to another, it checks which action is called and modifies the store based on it
 const petCounter = (state = 0, action) => {
   switch (action.type) {
     case "PET_INCREASED":
