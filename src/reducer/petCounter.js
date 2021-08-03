@@ -1,8 +1,8 @@
 const petCounter = (state = 0, action) => {
   switch (action.type) {
-    case "PET_INCREASED":
+    case "PET_FAVORITE_INCREASED":
       return state + 1;
-    case "PET_DECREASED":
+    case "PET_FAVORITE_DECREASED":
       return state - 1;
     default:
       return state;
