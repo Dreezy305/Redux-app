@@ -1,6 +1,7 @@
-export const petIncrement = () => {
+export const petIncrement = (number) => {
   return {
     type: "PET_INCREASED",
+    payload: number,
   };
 };
 
