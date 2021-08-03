@@ -1,5 +1,6 @@
 import "./App.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { petIncrement, petDecrement } from "./actions/index";
 
 // store: is the global state
 // action: defines what to do
@@ -10,11 +11,12 @@ function App() {
   const petCounter = useSelector((state) => state.petCounter);
   const petFavorite = useSelector((state) => state.petFavorite);
 
+  const dispatch = useDispatch();
   return (
     <div className="App">
       <h1>Welcome to React-Redux App</h1>
-      <button>Add pets</button>
-      <button>Remove pets</button>
+      <button onClick={() => dispatch(petIncrement())}>Add pets</button>
+      <button onClick={() => dispatch(petDecrement())}>Remove pets</button>
       <h1>Pet Counter {petCounter}</h1>
       <h1>Number of favorite pets so far {petFavorite}</h1>
     </div>
