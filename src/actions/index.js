@@ -10,3 +10,15 @@ export const petDecrement = () => {
     type: "PET_DECREASE",
   };
 };
+
+export const PET_FAVORITE_INCREASED = () => {
+  return {
+    type: "PET_FAVORITE_INCREASED",
+  };
+};
+
+export const PET_FAVORITE_DECREASED = () => {
+  return {
+    type: "PET_FAVORITE_DECREASED",
+  };
+};
