@@ -13,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to React-Redux App</h1>
+      <button>Add pets</button>
+      <button>Remove pets</button>
       <h1>Pet Counter {petCounter}</h1>
       <h1>Number of favorite pets so far {petFavorite}</h1>
     </div>
