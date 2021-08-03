@@ -30,6 +30,8 @@ const petCounter = (state = 0, action) => {
 };
 
 let store = createStore(petCounter);
+
+store.subscribe(() => console.log(store.getState()));
 // dispatch: performs action to the reducer
 store.dispatch(petIncrement());
 
