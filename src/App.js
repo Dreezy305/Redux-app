@@ -1,5 +1,10 @@
 import "./App.css";
 
+// store is the global state
+// action defines what to do
+// reducer describes how an action changs from one state to another
+// dispatch performs action to the reducer
+
 function App() {
   return (
     <div className="App">
