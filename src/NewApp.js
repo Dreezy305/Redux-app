@@ -14,7 +14,7 @@ function NewApp() {
   const dispatch = useDispatch();
   return (
     <div className="App">
-      <h1>Welcome to React-Redux App</h1>
+      <h1>New React-Redux App</h1>
       <button onClick={() => dispatch(petIncrement(2))}>Add pets</button>
       <button onClick={() => dispatch(petDecrement())}>Remove pets</button>
       <h1>Pet Counter {petCounter}</h1>
