@@ -1,4 +1,5 @@
 import "./App.css";
+import { useSelector } from "react-redux";
 
 // store: is the global state
 // action: defines what to do
