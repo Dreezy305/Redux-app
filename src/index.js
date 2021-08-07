@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import NewApp from "./NewApp";
-import { createStore } from "redux";
-import reducers from "./reducer/index";
+//import { createStore } from "redux";
+//import reducers from "./reducer/index";
+import store from "./store";
 import { Provider } from "react-redux";
 
 // store: is the global state
@@ -12,10 +13,10 @@ import { Provider } from "react-redux";
 //
 // reducer:  describes how an action changes from one state to another, it checks which action is called and modifies the store based on it
 //
-const store = createStore(
-  reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+//const store = createStore(
+//  reducers,
+//  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//);
 
 // store.subscribe(() => console.log(store.getState()));
 
